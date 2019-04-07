@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/navicore/lots-of-names.svg?branch=master)](https://travis-ci.org/navicore/lots-of-names)
 # Lots of Names
 
 WARNING - experimental
