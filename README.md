@@ -4,6 +4,31 @@ WARNING - experimental
 
 Generate not-so-believable names from input strings.  Collisions are about 1 every 10,000 inputs.
 
+Sample Names from UUIDs:
+
+```
+Seilhymer Pellucid
+Raycroft Fragging
+Karl Cuteness Maczko
+Lavonna Juggernaut
+Burington Labrid
+Preexchanging Ditmars
+Waffness Filla
+Montes Bovard
+Waltner Megalecithal
+Callipash Bidget
+Joette Unanalogical
+Siena Bits Biddlecome
+Overlubricated Wuerz
+Isologous Vahan
+Lorca Tigertoes Vongsakda
+Albeiro Jiujutsu
+Vendaces Pooh Rosenbluth
+Horsehair Shawgo
+Sympodial Mydear Dekany
+Ossenfort Bundist
+```
+
 # INSTALL
 
 Binaries available via [maven](https://mvnrepository.com/artifact/tech.navicore/lotsofnames): - check for latest version
