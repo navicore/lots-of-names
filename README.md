@@ -2,31 +2,33 @@
 
 WARNING - experimental
 
+WARNING - reproducibility breaks between versions (for now) but not builds
+
 Generate not-so-believable names from input strings.  Collisions are about 1 every 10,000 inputs.
 
 Sample Names from UUIDs:
 
 ```
-Seilhymer Pellucid
-Raycroft Fragging
-Karl Cuteness Maczko
-Lavonna Juggernaut
-Burington Labrid
-Preexchanging Ditmars
-Waffness Filla
-Montes Bovard
-Waltner Megalecithal
-Callipash Bidget
-Joette Unanalogical
-Siena Bits Biddlecome
-Overlubricated Wuerz
-Isologous Vahan
-Lorca Tigertoes Vongsakda
-Albeiro Jiujutsu
-Vendaces Pooh Rosenbluth
-Horsehair Shawgo
-Sympodial Mydear Dekany
-Ossenfort Bundist
+Hadjer Geary
+Iris Rocky Idelisa
+Zelek Amphoricity
+Bendell Lean Lynchj
+Mcgavin Macpherson Kreischer
+Cheney Checker Eurton
+Añes Foucault
+Alexander Washington Colasuonno
+Gretzky Tune Inzer
+Dudley Kluber
+Scolari Zody
+Houdek Chocolate
+Alken Beauty
+Moslim Distributary
+Watson Lister Dair
+Charles Canalise
+Jaeckel Decio
+Zeh  Beadle Cun
+Undevilish Alfonso Creamer
+Pitts Leisinger
 ```
 
 # INSTALL
