@@ -65,3 +65,4 @@ export GPG_TTY=$(tty)
 sbt +publishSigned
 sbt sonatypeReleaseAll
 ```
+
