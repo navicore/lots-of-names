@@ -7,6 +7,8 @@ WARNING - reproducibility breaks between versions (for now) but not builds
 
 Generate not-so-believable names from input strings.  Collisions are about 1 every 10,000 inputs.
 
+Creates reproducible indexes into the name databases with `scaala.util.hashing.MurmurHash3`.
+
 Sample Names from UUIDs:
 
 ```
