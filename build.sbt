@@ -12,7 +12,7 @@ javaOptions in test ++= Seq(
 
 parallelExecution in test := false
 
-crossScalaVersions := List("2.12.8")
+crossScalaVersions := List("2.12.8", "2.11.12")
 
 inThisBuild(List(
   organization := "tech.navicore",
