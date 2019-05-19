@@ -35,4 +35,5 @@ before_cache:
   - rm -rf $HOME/.ivy2/local
 
 before_install:
+  - sudo apt-get install -y scalafmt
   - git fetch --tags
