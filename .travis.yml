@@ -3,7 +3,7 @@ language: scala
 dist: xenial
 
 jdk:
-  - oraclejdk9
+  - openjdk8
 
 stages:
   - name: test
