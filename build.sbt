@@ -12,9 +12,7 @@ javaOptions in test ++= Seq(
 
 parallelExecution in test := false
 
-lazy val core = project.settings(
-  crossScalaVersions := List("2.12.8")
-)
+crossScalaVersions := List("2.12.8")
 
 inThisBuild(List(
   organization := "tech.navicore",
