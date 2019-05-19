@@ -12,68 +12,26 @@ javaOptions in test ++= Seq(
 
 parallelExecution in test := false
 
-version := "0.2.0"
-
-val scala212 = "2.12.7"
-
-crossScalaVersions := Seq(scala212)
-
-publishMavenStyle := true
-
-homepage := Some(url("https://github.com/navicore/lots-of-names"))
-
-scmInfo := Some(ScmInfo(url("https://github.com/navicore/lots-of-names"),
-                            "git@github.com:navicore/lots-of-names.git"))
-
-developers := List(Developer("navicore",
-                             "Ed Sweeney",
-                             "ed@onextent.com",
-                             url("https://github.com/navicore")))
-licenses += ("MIT", url("https://opensource.org/licenses/MIT"))
-
-import ReleaseTransformations._
-
-releaseCrossBuild := true
-
-releasePublishArtifactsAction := PgpKeys.publishSigned.value // Use publishSigned in publishArtifacts step
-
-releaseProcess := Seq[ReleaseStep](
-  checkSnapshotDependencies,
-  inquireVersions,
-  runClean,
-  runTest,
-  setReleaseVersion,
-  commitReleaseVersion,
-  tagRelease,
-  publishArtifacts,
-  setNextVersion,
-  commitNextVersion,
-  releaseStepCommand("sonatypeReleaseAll"),
-  pushChanges
+lazy val core = project.settings(
+  crossScalaVersions := List("2.12.8")
 )
 
-credentials += Credentials(Path.userHome / ".sbt" / "pgp.credentials")  
-
-// begin overwrite staging support
-/* publishConfiguration := publishConfiguration.value.withOverwrite(true) */
-/* com.typesafe.sbt.pgp.PgpKeys.publishSignedConfiguration := com.typesafe.sbt.pgp.PgpKeys.publishSignedConfiguration.value.withOverwrite(true) */
-/* publishLocalConfiguration := publishLocalConfiguration.value.withOverwrite(true) */
-/* com.typesafe.sbt.pgp.PgpKeys.publishLocalSignedConfiguration := com.typesafe.sbt.pgp.PgpKeys.publishLocalSignedConfiguration.value.withOverwrite(true) */
-// end overwrite staging support
-
-
-sonatypeProfileName := "tech.navicore"
-useGpg := true
-publishTo := Some(
-  if (isSnapshot.value)
-    Opts.resolver.sonatypeSnapshots
-  else
-    Opts.resolver.sonatypeStaging
-)
+inThisBuild(List(
+  organization := "tech.navicore",
+  homepage := Some(url("https://github.com/navicore/lots-of-names")),
+  licenses := List("MIT" -> url("https://github.com/navicore/lots-of-names/blob/master/LICENSE")),
+  developers := List(
+    Developer(
+      "navicore",
+      "Ed Sweeney",
+      "ed@onextent.com",
+      url("https://navicore.tech")
+    )
+  )
+))
 
 libraryDependencies ++=
   Seq(
-
     "org.scalatest" %% "scalatest" % "3.0.5" % "test"
   )
 
