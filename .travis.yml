@@ -1,5 +1,7 @@
 language: scala
-#dist: trusty
+
+dist: xenial
+
 jdk:
   - oraclejdk8
 
