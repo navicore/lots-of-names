@@ -8,7 +8,8 @@ class LotsOfPeopleSpec extends FlatSpec with Matchers {
 
   "what is" should "hash" in {
 
-    val data = "1010020202993993938484885858577583939392929393AAKDKDKDKDKDKDKDKDKDD"
+    val data =
+      "1010020202993993938484885858577583939392929393AAKDKDKDKDKDKDKDKDKDD"
     val id = LotsOfPeople(data)
     assert(id == "Bentley Rizvi")
 
@@ -30,7 +31,8 @@ class LotsOfPeopleSpec extends FlatSpec with Matchers {
 
     val set = ids.toSet
 
-    assert(ids.length - set.size < 20, s"--- too many dupes: ${ids.length - set.size}")
+    assert(ids.length - set.size < 20,
+           s"--- too many dupes: ${ids.length - set.size}")
 
     set.slice(0, 20).foreach(println)
 
