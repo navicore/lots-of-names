@@ -42,7 +42,7 @@ Binaries available via [maven](https://mvnrepository.com/artifact/tech.navicore/
 Update your `build.sbt` dependencies with:
 ```scala
 // https://mvnrepository.com/artifact/tech.navicore/lotsofnames
-libraryDependencies += "tech.navicore" %% "lotsofnames" % "0.1.1"
+libraryDependencies += "tech.navicore" %% "lotsofnames" % "1.0.0"
 ```
 
 ## USAGE
