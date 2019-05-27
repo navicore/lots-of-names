@@ -2,13 +2,13 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/9847820a8b7040268c808b45e597393c)](https://www.codacy.com/app/navicore/lots-of-names?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=navicore/lots-of-names&amp;utm_campaign=Badge_Grade)
 # Lots of Names
 
-WARNING - experimental
+Generate fun safe-for-work names from input strings.  Collisions are about 1 every 10,000 inputs.
 
-WARNING - reproducibility breaks between versions (for now) but not builds
+Useful for assigning fake but consistent names to test data as well as tokenized PII data where you want to study customer behavior but not spy on individual folks.
 
-Generate not-so-believable names from input strings.  Collisions are about 1 every 10,000 inputs.
+Creates reproducible human names with the help of `scaala.util.hashing.MurmurHash3`.
 
-Creates reproducible indexes into the name databases with `scaala.util.hashing.MurmurHash3`.
+Reproducibility is tied to the major version number of a release.
 
 Sample Names from UUIDs:
 
