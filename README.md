@@ -48,6 +48,20 @@ libraryDependencies += "tech.navicore" %% "lotsofnames" % "1.0.0"
 ## USAGE
 
 ```scala
+    val data = "7AC7E2AD-50E2-4515-8392-A83B38CE9144"
+    val id = LotsOfPeople(data)
+    assert(id == "Aldrin Cricket Heisser")
+```
+
+or test it via curl with the lots-of-names-api deployment:
+
+```console
+curl -d '[{"sourceId": "7AC7E2AD-50E2-4515-8392-A83B38CE9144"}]' -H "Content-Type: application/json" -X POST https://lotsofnames.navicore.tech/names
+```
+
+another:
+
+```scala
     val data = "1010020202993993938484885858577583939392929393AAKDKDKDKDKDKDKDKDKDD"
     val id = LotsOfPeople(data)
     assert(id == "Homeothermous Mykhaylo")
