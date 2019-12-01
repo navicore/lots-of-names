@@ -3,8 +3,10 @@ package tech.navicore.lotsofnames
 import java.util.UUID
 
 import org.scalatest._
+import org.scalatest.flatspec.AnyFlatSpec
+import org.scalatest.matchers.should.Matchers
 
-class LotsOfPeopleSpec extends FlatSpec with Matchers {
+class LotsOfPeopleSpec extends AnyFlatSpec with Matchers {
 
   "what is" should "hash" in {
 
