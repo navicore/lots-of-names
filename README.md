@@ -30,7 +30,7 @@ Moslim Distributary
 Watson Lister Dair
 Charles Canalise
 Jaeckel Decio
-Zeh  Beadle Cun
+Zeh Beadle Cun
 Undevilish Alfonso Creamer
 Pitts Leisinger
 ```
