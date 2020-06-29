@@ -53,6 +53,12 @@ libraryDependencies += "tech.navicore" %% "lotsofnames" % "2.0.0"
     assert(id == "Aldrin Cricket Heisser")
 ```
 
+```scala
+    val data = "Edward John Sweeney"
+    val id = LotsOfPeople(data)
+    assert(id == "Bili Aikman")
+```
+
 or test it via curl with the lots-of-names-api deployment:
 
 ```console

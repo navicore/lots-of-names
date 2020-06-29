@@ -2,7 +2,6 @@ package tech.navicore.lotsofnames
 
 import java.util.UUID
 
-import org.scalatest._
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
 
@@ -22,6 +21,14 @@ class LotsOfPeopleSpec extends AnyFlatSpec with Matchers {
     val uuid3 = "a8f0bb4c-e921-46a7-af32-268c9fdd15c3"
     val id3 = LotsOfPeople(uuid3)
     assert(id3 == "Conan Burris")
+
+  }
+
+  "Ed Sweeney" should "hash" in {
+
+    val data = "Edward John Sweeney"
+    val id = LotsOfPeople(data)
+    assert(id == "Bili Aikman")
 
   }
 
