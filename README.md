@@ -47,11 +47,15 @@ libraryDependencies += "tech.navicore" %% "lotsofnames" % "2.0.0"
 
 ## USAGE
 
+UUID to readable name
+
 ```scala
     val data = "7AC7E2AD-50E2-4515-8392-A83B38CE9144"
     val id = LotsOfPeople(data)
     assert(id == "Aldrin Cricket Heisser")
 ```
+
+or alias generator
 
 ```scala
     val data = "Edward John Sweeney"
