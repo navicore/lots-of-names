@@ -50,17 +50,17 @@ libraryDependencies += "tech.navicore" %% "lotsofnames" % "2.0.0"
 UUID to readable name
 
 ```scala
-    val data = "7AC7E2AD-50E2-4515-8392-A83B38CE9144"
-    val id = LotsOfPeople(data)
-    assert(id == "Aldrin Cricket Heisser")
+    val id = "7AC7E2AD-50E2-4515-8392-A83B38CE9144"
+    val name = LotsOfPeople(id)
+    assert(name == "Aldrin Cricket Heisser")
 ```
 
 or alias generator
 
 ```scala
-    val data = "Edward John Sweeney"
-    val id = LotsOfPeople(data)
-    assert(id == "Bili Aikman")
+    val name = "Edward John Sweeney"
+    val alias = LotsOfPeople(name)
+    assert(alias == "Bili Aikman")
 ```
 
 or test it via curl with the lots-of-names-api deployment:
