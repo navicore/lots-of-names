@@ -40,8 +40,10 @@ class LotsOfPeopleSpec extends AnyFlatSpec with Matchers {
 
     val set = ids.toSet
 
-    assert(ids.length - set.size < 10,
-           s"--- too many dupes: ${ids.length - set.size}")
+    assert(
+      ids.length - set.size < 10,
+      s"--- too many dupes: ${ids.length - set.size}"
+    )
 
     set.slice(0, 20).foreach(println)
 
