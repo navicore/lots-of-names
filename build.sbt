@@ -30,7 +30,7 @@ inThisBuild(List(
 
 libraryDependencies ++=
   Seq(
-    "org.scalatest" %% "scalatest" % "3.2.9" % "test"
+    "org.scalatest" %% "scalatest" % "3.2.10" % "test"
   )
 
 assemblyJarName in assembly := "LotsOfNames.jar"
