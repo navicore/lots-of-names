@@ -1,12 +1,13 @@
 name := "LotsOfNames"
 organization := "tech.navicore"
-javacOptions ++= Seq("-source", "1.8", "-target", "1.8") 
+javacOptions ++= Seq("-source", "1.8", "-target", "1.8")
 scalacOptions ++= Seq(
   "-target:jvm-1.8"
 )
 fork := true
 javaOptions in test ++= Seq(
-  "-Xms128M", "-Xmx256M",
+  "-Xms128M",
+  "-Xmx256M",
   "-XX:+CMSClassUnloadingEnabled"
 )
 
@@ -17,19 +18,25 @@ enablePlugins(GitVersioning)
 ThisBuild / publishTo := Some(
   "releases" at "https://oss.sonatype.org/service/local/staging/deploy/maven2"
 )
-inThisBuild(List(
-  organization := "tech.navicore",
-  homepage := Some(url("https://github.com/navicore/lots-of-names")),
-  licenses := List("MIT" -> url("https://github.com/navicore/lots-of-names/blob/master/LICENSE")),
-  developers := List(
-    Developer(
-      "navicore",
-      "Ed Sweeney",
-      "ed@onextent.com",
-      url("https://navicore.tech")
+inThisBuild(
+  List(
+    organization := "tech.navicore",
+    homepage := Some(url("https://github.com/navicore/lots-of-names")),
+    licenses := List(
+      "MIT" -> url(
+        "https://github.com/navicore/lots-of-names/blob/master/LICENSE"
+      )
+    ),
+    developers := List(
+      Developer(
+        "navicore",
+        "Ed Sweeney",
+        "ed@onextent.com",
+        url("https://navicore.tech")
+      )
     )
   )
-))
+)
 
 libraryDependencies ++=
   Seq(
@@ -39,9 +46,8 @@ libraryDependencies ++=
 assemblyJarName in assembly := "LotsOfNames.jar"
 
 assemblyMergeStrategy in assembly := {
-  case PathList("reference.conf") => MergeStrategy.concat
+  case PathList("reference.conf")                      => MergeStrategy.concat
   case x if x.endsWith("io.netty.versions.properties") => MergeStrategy.first
-  case PathList("META-INF", _ @ _*) => MergeStrategy.discard
-  case _ => MergeStrategy.first
+  case PathList("META-INF", _ @_*)                     => MergeStrategy.discard
+  case _                                               => MergeStrategy.first
 }
-
