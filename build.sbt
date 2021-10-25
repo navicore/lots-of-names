@@ -6,8 +6,9 @@ scalacOptions ++= Seq(
 )
 fork := true
 javaOptions in test ++= Seq(
-  "-Xms128M",
-  "-Xmx256M",
+  "-Xms512M",
+  "-Xmx2048M",
+  "-XX:MaxPermSize=2048M",
   "-XX:+CMSClassUnloadingEnabled"
 )
 
