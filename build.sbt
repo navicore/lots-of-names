@@ -16,9 +16,7 @@ parallelExecution in test := false
 
 crossScalaVersions := List("2.12.15", "2.13.6")
 enablePlugins(GitVersioning)
-ThisBuild / publishTo := Some(
-  "releases" at "https://oss.sonatype.org/service/local/staging/deploy/maven2"
-)
+ThisBuild / publishTo := sonatypePublishToBundle.value
 inThisBuild(
   List(
     organization := "tech.navicore",
