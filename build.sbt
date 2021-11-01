@@ -14,7 +14,7 @@ javaOptions in test ++= Seq(
 
 parallelExecution in test := false
 
-crossScalaVersions := List("2.12.15", "2.13.6")
+crossScalaVersions := List("2.12.15", "2.13.7")
 enablePlugins(GitVersioning)
 ThisBuild / publishTo := sonatypePublishToBundle.value
 inThisBuild(
