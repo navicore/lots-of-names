@@ -79,17 +79,6 @@ another:
 
 ## OPS
 
-### publish local
+* Github Actions are triggered on PRs to run the tests.
 
-```console
-sbt +publishLocalSigned
-```
-
-### publish to nexus staging
-
-```console
-export GPG_TTY=$(tty)
-sbt +publishSigned
-sbt sonatypeReleaseAll
-```
-
+* Releases are built and published to Maven Central via Github Actions.
