@@ -20,7 +20,7 @@ class LotsOfPeopleSpec extends AnyFlatSpec with Matchers {
 
     val uuid3 = "a8f0bb4c-e921-46a7-af32-268c9fdd15c3"
     val id3 = LotsOfPeople(uuid3)
-    assert(id3 == "Kangaroo Sapia")
+    assert(id3 == "Kangaroo Kallevig")
 
   }
 
