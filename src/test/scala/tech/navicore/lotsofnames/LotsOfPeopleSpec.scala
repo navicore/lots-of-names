@@ -12,11 +12,11 @@ class LotsOfPeopleSpec extends AnyFlatSpec with Matchers {
     val data =
       "1010020202993993938484885858577583939392929393AAKDKDKDKDKDKDKDKDKDD"
     val id = LotsOfPeople(data)
-    assert(id == "Jedida Ismaila")
+    assert(id == "Jedida Elaid")
 
     val uuid = "a8f0bb4c-e921-46a7-af32-268c9fdd15c2"
     val id2 = LotsOfPeople(uuid)
-    assert(id2 == "Moab April Plamenka")
+    assert(id2 == "Moab Julie Harnist")
 
     val uuid3 = "a8f0bb4c-e921-46a7-af32-268c9fdd15c3"
     val id3 = LotsOfPeople(uuid3)
@@ -28,7 +28,7 @@ class LotsOfPeopleSpec extends AnyFlatSpec with Matchers {
 
     val data = "Edward John Sweeney"
     val id = LotsOfPeople(data)
-    assert(id == "Melly Aldridge")
+    assert(id == "Sanjose Aldridge")
 
   }
 
