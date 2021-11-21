@@ -2,11 +2,11 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/9847820a8b7040268c808b45e597393c)](https://www.codacy.com/app/navicore/lots-of-names?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=navicore/lots-of-names&amp;utm_campaign=Badge_Grade)
 # Lots of Names
 
-Generate fun safe-for-work names from input strings.  Collisions are about 1 every 10,000 inputs.
+Generate fun safe-for-work names from input strings.  Collisions are about 1 every 15,000 to 20,000 inputs.
 
-Useful for assigning fake but consistent names to test data as well as tokenized PII data where you want to study customer behavior but not spy on individual folks.
+Useful for assigning fake but consistently calculable names to test data as well as tokenized PII data where you want to study customer behavior but not spy on anyone. CAUTION - anonymizing PII data is deceptively hard to protect against correlation attacks - de-anonymizing.
 
-Creates reproducible human names with the help of `scaala.util.hashing.MurmurHash3`.
+Creates reproducible human-ish names with the help of `scaala.util.hashing.MurmurHash3`.
 
 Reproducibility is tied to the major version number of a release.
 
@@ -42,7 +42,7 @@ Binaries available via [maven](https://mvnrepository.com/artifact/tech.navicore/
 Update your `build.sbt` dependencies with:
 ```scala
 // https://mvnrepository.com/artifact/tech.navicore/lotsofnames
-libraryDependencies += "tech.navicore" %% "lotsofnames" % "2.0.0"
+libraryDependencies += "tech.navicore" %% "lotsofnames" % "3.0.0"
 ```
 
 ## USAGE
