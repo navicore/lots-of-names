@@ -79,5 +79,5 @@ another:
 
 ## OPS
 
-  * Github Actions are triggered on PRs to run the tests.
-  * Releases are built and published to Maven Central via Github Actions.
+* Github Actions are triggered on PRs to run the tests.
+* Releases are built and published to Maven Central via Github Actions.
