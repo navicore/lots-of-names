@@ -5,17 +5,17 @@ scalacOptions ++= Seq(
   "-target:jvm-1.8"
 )
 fork := true
-javaOptions in test ++= Seq(
+test / javaOptions ++= Seq(
   "-Xms512M",
   "-Xmx2048M",
   "-XX:MaxPermSize=2048M",
   "-XX:+CMSClassUnloadingEnabled"
 )
 
-parallelExecution in test := false
+test / parallelExecution := false
 
 crossScalaVersions := List("2.12.16", "2.13.8")
-enablePlugins(GitVersioning)
+//enablePlugins(GitVersioning)
 ThisBuild / publishTo := sonatypePublishToBundle.value
 inThisBuild(
   List(
