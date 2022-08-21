@@ -27,12 +27,12 @@ inThisBuild(
           https://github.com/navicore/lots-of-names
         </url>
       </scm>
-    )
-      licenses := List (
-        "MIT" -> url(
-          "https://github.com/navicore/lots-of-names/blob/master/LICENSE"
-        )
-      ),
+    ),
+    licenses := List(
+      "MIT" -> url(
+        "https://github.com/navicore/lots-of-names/blob/master/LICENSE"
+      )
+    ),
     developers := List(
       Developer(
         "navicore",
