@@ -15,7 +15,6 @@ test / javaOptions ++= Seq(
 test / parallelExecution := false
 
 crossScalaVersions := List("2.12.16", "2.13.8")
-//enablePlugins(GitVersioning)
 
 ThisBuild / organization := "tech.navicore"
 ThisBuild / homepage := Some(url("https://github.com/navicore/lots-of-names"))
