@@ -15,33 +15,31 @@ test / javaOptions ++= Seq(
 test / parallelExecution := false
 
 crossScalaVersions := List("2.12.16", "2.13.8")
-enablePlugins(GitVersioning)
-ThisBuild / publishTo := sonatypePublishToBundle.value
-inThisBuild(
-  List(
-    organization := "tech.navicore",
-    homepage := Some(url("https://github.com/navicore/lots-of-names")),
-    scmInfo := Some(
-      ScmInfo(
-        url("https://github.com/navicore/lots-of-names"),
-        "scm:git@github.com:navicore/lots-of-names.git"
-      )
-    ),
-    licenses := List(
-      "MIT" -> url(
-        "https://github.com/navicore/lots-of-names/blob/master/LICENSE"
-      )
-    ),
-    developers := List(
-      Developer(
-        "navicore",
-        "Ed Sweeney",
-        "ed@onextent.com",
-        url("https://navicore.tech")
-      )
-    )
+//enablePlugins(GitVersioning)
+
+ThisBuild / organization := "tech.navicore"
+ThisBuild / homepage := Some(url("https://github.com/navicore/lots-of-names"))
+ThisBuild / scmInfo := Some(
+  ScmInfo(
+    url("https://github.com/navicore/lots-of-names"),
+    "scm:git@github.com:navicore/lots-of-names.git"
   )
 )
+ThisBuild / licenses := List(
+  "MIT" -> url(
+    "https://github.com/navicore/lots-of-names/blob/master/LICENSE"
+  )
+)
+ThisBuild / developers := List(
+  Developer(
+    "navicore",
+    "Ed Sweeney",
+    "ed@onextent.com",
+    url("https://navicore.tech")
+  )
+)
+
+ThisBuild / publishTo := sonatypePublishToBundle.value
 
 libraryDependencies ++=
   Seq(
