@@ -21,6 +21,7 @@ inThisBuild(
   List(
     organization := "tech.navicore",
     homepage := Some(url("https://github.com/navicore/lots-of-names")),
+    scm := Some(url("https://github.com/navicore/lots-of-names")),
     licenses := List(
       "MIT" -> url(
         "https://github.com/navicore/lots-of-names/blob/master/LICENSE"
