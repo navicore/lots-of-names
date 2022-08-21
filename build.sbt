@@ -21,12 +21,18 @@ inThisBuild(
   List(
     organization := "tech.navicore",
     homepage := Some(url("https://github.com/navicore/lots-of-names")),
-    scm := Some(url("https://github.com/navicore/lots-of-names")),
-    licenses := List(
-      "MIT" -> url(
-        "https://github.com/navicore/lots-of-names/blob/master/LICENSE"
-      )
-    ),
+    pomExtra := (
+      <scm>
+        <url>
+          https://github.com/navicore/lots-of-names
+        </url>
+      </scm>
+    )
+      licenses := List (
+        "MIT" -> url(
+          "https://github.com/navicore/lots-of-names/blob/master/LICENSE"
+        )
+      ),
     developers := List(
       Developer(
         "navicore",
