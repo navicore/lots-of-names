@@ -14,7 +14,7 @@ test / javaOptions ++= Seq(
 
 test / parallelExecution := false
 
-crossScalaVersions := List("2.12.17", "2.13.8")
+crossScalaVersions := List("2.12.17", "2.13.9")
 
 ThisBuild / organization := "tech.navicore"
 ThisBuild / homepage := Some(url("https://github.com/navicore/lots-of-names"))
