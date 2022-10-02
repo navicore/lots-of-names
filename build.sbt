@@ -42,7 +42,7 @@ ThisBuild / publishTo := sonatypePublishToBundle.value
 
 libraryDependencies ++=
   Seq(
-    "org.scalatest" %% "scalatest" % "3.2.13" % "test"
+    "org.scalatest" %% "scalatest" % "3.2.14" % "test"
   )
 
 assemblyJarName in assembly := "LotsOfNames.jar"
