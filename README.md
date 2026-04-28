@@ -1,3 +1,8 @@
+<!-- ghmig:moved -->
+> **This repository has moved to [https://git.navicore.tech/navicore/lots-of-names](https://git.navicore.tech/navicore/lots-of-names).**
+>
+> The GitHub copy is archived and no longer maintained.
+
 [![Build Status](https://travis-ci.org/navicore/lots-of-names.svg?branch=master)](https://travis-ci.org/navicore/lots-of-names)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/9847820a8b7040268c808b45e597393c)](https://www.codacy.com/app/navicore/lots-of-names?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=navicore/lots-of-names&amp;utm_campaign=Badge_Grade)
 # Lots of Names
